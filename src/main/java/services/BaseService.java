@@ -18,7 +18,7 @@ public class BaseService {
         this.specification = spec;
     }
 
-    @Step("Отправка запроса [GET {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [GET {basePath}], expectedCode: {expectedCode}")
     protected <T> List<T> getList(String basePath, String listPath, Class<T> myClass, int expectedCode) {
         List<T> result = given()
                 .spec(specification)
@@ -31,7 +31,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [GET {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [GET {basePath}], expectedCode: {expectedCode}")
     protected <T> T getObject(String basePath, Class<T> myClass, int expectedCode) {
         T result = given()
                 .spec(specification)
@@ -45,7 +45,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [GET {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [GET {basePath}], expectedCode: {expectedCode}")
     protected Response getResponse(String basePath, int expectedCode) {
         Response result = given()
                 .spec(specification)
@@ -59,7 +59,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [PUT {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [PUT {basePath}], expectedCode: {expectedCode}")
     protected <T> T putObject(String basePath, Class<T> myClass, int expectedCode) {
         T result = given()
                 .spec(specification)
@@ -73,7 +73,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [PUT {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [PUT {basePath}], expectedCode: {expectedCode}")
     protected Response putResponse(String basePath, int expectedCode) {
         Response result = given()
                 .spec(specification)
@@ -87,7 +87,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [POST {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [POST {basePath}], expectedCode: {expectedCode}")
     protected <T> T postObject(String basePath, Class<T> myClass, int expectedCode) {
         T result = given()
                 .spec(specification)
@@ -101,7 +101,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [POST {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [POST {basePath}], expectedCode: {expectedCode}")
     protected Response postResponse(String basePath, int expectedCode) {
         Response result = given()
                 .spec(specification)
@@ -115,7 +115,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [DELETE {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [DELETE {basePath}], expectedCode: {expectedCode}")
     protected Response deleteResponse(String basePath, int expectedCode) {
         Response result = given()
                 .spec(specification)
@@ -129,7 +129,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [HEAD {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [HEAD {basePath}], expectedCode: {expectedCode}")
     protected Headers head(String basePath, int expectedCode) {
         Headers result = given()
                 .spec(specification)
@@ -143,7 +143,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [PATCH {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [PATCH {basePath}], expectedCode: {expectedCode}")
     protected <T> T patchObject(String basePath, Class<T> myClass, int expectedCode) {
         T result = given()
                 .spec(specification)
@@ -157,7 +157,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [PATCH {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [PATCH {basePath}], expectedCode: {expectedCode}")
     protected Response patchResponse(String basePath, int expectedCode) {
         Response result = given()
                 .spec(specification)
@@ -171,7 +171,7 @@ public class BaseService {
         return result;
     }
 
-    @Step("Отправка запроса [POST {basePath}], ожидаемый код ответа: {expectedCode}")
+    @Step("Sending [POST {basePath}], expectedCode: {expectedCode}")
     protected <T> List<T> postList(String basePath, Class<T> myClass, int expectedCode) {
         List<T> result = given()
                 .spec(specification)
