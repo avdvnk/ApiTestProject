@@ -6,6 +6,9 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import services.BaseService;
 
+/**
+ * Class for customization sending request
+ */
 public class ServiceBuilder {
 
     private RequestSpecBuilder specBuilder = new RequestSpecBuilder();

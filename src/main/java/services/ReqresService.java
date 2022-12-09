@@ -5,6 +5,9 @@ import helpers.ConfigHelper;
 import models.ListUsersResTO;
 import models.UserResTO;
 
+/**
+ * Class with methods to reqres.io
+ */
 public class ReqresService {
 
     private final String uri;
